@@ -1,0 +1,34 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "My Resume Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kush-blah/Portfolio.git"
+  },
+  "keywords": [
+    "Kush",
+    "Singh",
+    "Chibber",
+    "Software",
+    "Developer",
+    "Android",
+    "Kotlin",
+    "Python",
+    "JS",
+    "Java"
+  ],
+  "author": "Kush Singh Chibber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kush-blah/Portfolio/issues"
+  },
+  "homepage": "https://github.com/kush-blah/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
