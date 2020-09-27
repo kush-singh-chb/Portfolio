@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t kushsinghchb/Porfolio -f Dockerfile.dev .
+  - docker build -t kushsinghchb/porfolio -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true kushsinghchb/Porfolio npm run test
+  - docker run -e CI=true kushsinghchb/porfolio npm run test
