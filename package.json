@@ -4,7 +4,7 @@
   "description": "My Resume Website",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon -e js,html,ejs,css app.js ",
+    "start": "node app.js ",
     "test": "mocha"
   },
   "repository": {
