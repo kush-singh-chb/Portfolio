@@ -10,3 +10,13 @@ before_install:
 
 script:
   - docker run -e CI=true kushsinghchb/porfolio npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-west-1"
+  app: "Portfolio"
+  env: "Portfolio-env"
+  bucket: "portfolio-bucket-27092020"
+  bucket_path: "Portfolio"
+  on:
+    branch: master
