@@ -11,6 +11,6 @@ app.post('/contactForm', function (req, res) {
 console.log('received form details')
     res.render('pages/index');
 });
-app.listen(process.env.PORT || 3000, function () {
+app.listen(8080, function () {
     console.log('Example app listening on port 3000!');
 });
