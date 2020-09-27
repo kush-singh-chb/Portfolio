@@ -2,6 +2,7 @@ sudo: required
 language: "node_js"
 node_js:
   - "v12.18.4"
+
 services:
   - docker
 
@@ -15,8 +16,10 @@ deploy:
   provider: elasticbeanstalk
   region: "eu-west-1"
   app: "Portfolio"
-  env: "Portfolio-env"
-  bucket: "portfolio-bucket-27092020"
+  env: "Portfolio-env-1"
+  bucket: "elasticbeanstalk-eu-west-1-425316370862"
   bucket_path: "Portfolio"
   on:
     branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
