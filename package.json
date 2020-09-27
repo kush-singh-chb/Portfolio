@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon -e js,html,ejs,css app.js ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "fullpage.js": "^3.0.9"
   },
   "devDependencies": {
+    "mocha": "^8.1.3",
     "nodemon": "^2.0.4"
   }
 }
