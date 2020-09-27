@@ -6,4 +6,4 @@ before_install:
   - docker build -t kushsinghchb/porfolio -f Dockerfile.dev .
 
 script:
-  - docker run kushsinghchb/porfolio npm run test
+  - docker run -e CI=true kushsinghchb/porfolio npm run test
