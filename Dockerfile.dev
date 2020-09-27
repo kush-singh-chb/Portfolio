@@ -2,8 +2,9 @@ FROM node:latest
 
 RUN mkdir -p /usr/local/app
 WORKDIR /usr/local/app
-RUN npm install
 COPY . .
+
+RUN npm install
 
 EXPOSE 3000
 
