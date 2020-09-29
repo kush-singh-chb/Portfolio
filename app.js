@@ -27,6 +27,7 @@ app.get('/home',function (req,res){
 
 app.post('/contactForm', function (req, res) {
     const {name, email, message} = req.body;
+    console.log(name+" "+email+" "+message)
     const id = uuidv4();
     const docClient = new AWS.DynamoDB.DocumentClient();
     const params = {
@@ -45,8 +46,6 @@ app.post('/contactForm', function (req, res) {
                 message: 'Error: Server error'
             });
         } else {
-            console.log('data', data);
-            const {Items} = data;
             res.send({
                 success: true,
                 message: 'Added to Database',
