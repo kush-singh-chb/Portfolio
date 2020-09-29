@@ -22,7 +22,6 @@ app.get('/', function (req, res) {
 });
 
 app.post('/contactForm', function (req, res) {
-    res.set('Content-Type', 'text/html');
     const {name, email, message} = req.body;
     const id = uuidv4();
     const docClient = new AWS.DynamoDB.DocumentClient();
