@@ -46,6 +46,8 @@ app.post('/contactForm', function (req, res) {
                 message: 'Error: Server error'
             });
         } else {
+            console.log('data', data);
+            const { Items } = data;
             res.redirect('/');
         }
     });
