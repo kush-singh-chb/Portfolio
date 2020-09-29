@@ -50,7 +50,7 @@ app.post('/contactForm', function (req, res) {
             });
         }
     });
-    res.render('pages/index');
+    res.redirect('/')
 });
 
 app.listen(process.env.PORT || 3000, function () {
