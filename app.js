@@ -46,14 +46,9 @@ app.post('/contactForm', function (req, res) {
                 message: 'Error: Server error'
             });
         } else {
-            res.send({
-                success: true,
-                message: 'Added to Database',
-                id: id
-            });
+            res.redirect('/');
         }
     });
-    res.redirect("/home");
 });
 
 app.listen(process.env.PORT || 3000, function () {
