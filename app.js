@@ -1,3 +1,4 @@
+var bodyParser = require('body-parser');
 const express = require('express');
 const config = require('./config/config');
 const { v4: uuidv4 } = require('uuid');
@@ -10,7 +11,9 @@ const path = require('path');
 app.set('view engine', 'ejs');
 
 const publicDir = path.join(__dirname, '/public');
-
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    extended: true
+}));
 AWS.config.update(config.aws_remote_config)
 
 app.use(express.static(publicDir));
