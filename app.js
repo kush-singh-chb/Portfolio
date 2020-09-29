@@ -18,6 +18,10 @@ AWS.config.update(config.aws_remote_config)
 
 app.use(express.static(publicDir));
 app.get('/', function (req, res) {
+    res.redirect('/home')
+});
+
+app.get('/home',function (req,res){
     res.render('pages/index');
 });
 
@@ -34,23 +38,23 @@ app.post('/contactForm', function (req, res) {
             message: message
         }
     };
-    docClient.put(params, function (err, data) {
-        if (err) {
-            res.send({
-                success: false,
-                message: 'Error: Server error'
-            });
-        } else {
-            console.log('data', data);
-            const {Items} = data;
-            res.send({
-                success: true,
-                message: 'Added to Database',
-                id: id
-            });
-        }
-    });
-    res.render('pages/index')
+    // docClient.put(params, function (err, data) {
+    //     if (err) {
+    //         res.send({
+    //             success: false,
+    //             message: 'Error: Server error'
+    //         });
+    //     } else {
+    //         console.log('data', data);
+    //         const {Items} = data;
+    //         res.send({
+    //             success: true,
+    //             message: 'Added to Database',
+    //             id: id
+    //         });
+    //     }
+    // });
+    res.redirect("/home");
 });
 
 app.listen(process.env.PORT || 3000, function () {
