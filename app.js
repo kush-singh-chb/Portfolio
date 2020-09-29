@@ -1,6 +1,6 @@
 const express = require('express');
-const config = require('config')
-import {v4 as uuidv4} from 'uuid';
+const config = require('./config/config');
+const { v4: uuidv4 } = require('uuid');
 
 const AWS = require('aws-sdk');
 
