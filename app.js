@@ -11,7 +11,7 @@ const path = require('path');
 app.set('view engine', 'ejs');
 
 const publicDir = path.join(__dirname, '/public');
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+app.use(bodyParser.urlencoded({// to support URL-encoded bodies
     extended: true
 }));
 AWS.config.update(config.aws_remote_config)
