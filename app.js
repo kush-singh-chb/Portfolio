@@ -20,10 +20,6 @@ AWS.config.update(config.aws_remote_config)
 
 app.use(express.static(publicDir));
 app.get('/', function (req, res) {
-    res.redirect('/home')
-});
-
-app.get('/home',function (req,res){
     res.render('pages/index');
 });
 
