@@ -226,7 +226,8 @@
     <!-- end portfolio -->
 
     <div id="Professional" class="section">
-        <h2 class="text-center wow bounce">Professional Timeline<img src="images/Work.gif" width="100px" height="80px"></h2>
+        <h2 class="text-center wow bounce">Professional Timeline<img src="images/Work.gif" width="100px" height="80px">
+        </h2>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12" style="height: 500px; margin-top: 10px">
@@ -237,8 +238,10 @@
                                 <h3 class="title">Ambab Infotech : Android Engineer</h3>
                                 <h4 class="card-subtitle text-white">2017-2018</h4>
                                 <p class="description">
-                                    Worked on 5 Projects,2 major & 3 Minor contributions. Since the client was a product based company, got to expericence
-                                    a lot of new technologies. Some of which are Retrofit, MVVM Design pattern, Reactive Programming, Node js API server, Kotlin, Dagger Dependency Injection,
+                                    Worked on 5 Projects,2 major & 3 Minor contributions. Since the client was a product
+                                    based company, got to expericence
+                                    a lot of new technologies. Some of which are Retrofit, MVVM Design pattern, Reactive
+                                    Programming, Node js API server, Kotlin, Dagger Dependency Injection,
                                     Real-time monetary based API for Live Trading, XMPP protocol for support.
                                 </p>
                             </div>
@@ -248,7 +251,8 @@
                             <div class="timeline-content">
                                 <h3 class="title">Web Developer</h3>
                                 <p class="description">
-                                    Worked on 1 Software Project and Hardware Technical Troubleshooting. Built website modules using Symfony,PHP5 and JavaScript.
+                                    Worked on 1 Software Project and Hardware Technical Troubleshooting. Built website
+                                    modules using Symfony,PHP5 and JavaScript.
                                 </p>
                             </div>
                         </a>
@@ -262,15 +266,71 @@
         <h2 class="text-center wow bounce">My Academia<img src="images/education.gif" width="100px" height="80px"></h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-
+                <div class="col card-group">
+                    <div class="card rounded">
+                        <div class="face face1 rounded-top">
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="https://www.griffith.ie/sites/all/themes/griffith/images/griffith-title-logo.png"
+                                         width="300px" alt="college"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2 rounded-bottom">
+                            <div class="content">
+                                <h3>
+                                    <a href="https://www.griffith.ie/faculties/computing/courses/msc-big-data-management-and-analytics" target="_blank">Griffith College Dublin</a>
+                                </h3>
+                                <p>Masters in Science of Big Data Analytics and Management</p>
+                                <p>Graduated with 2:1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-0">
+                        <div class="face face1">
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="https://www.griffith.ie/sites/all/themes/griffith/images/griffith-title-logo.png"
+                                         width="300px" alt="college"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>
+                                    <a href="https://www.griffith.ie/faculties/computing/courses/higher-diploma-science-computing" target="_blank">Griffith College Dublin</a>
+                                </h3>
+                                <p>Higher Diploma in Computing Sciences</p>
+                                <p>Graduated with 1:1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-0">
+                        <div class="face face1">
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="https://rdnational.ac.in/img/logo.png"
+                                         width="200px" alt="college"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>
+                                    <a href="https://rdnational.ac.in/#!" target="_blank">R.D. National College Mumbai</a>
+                                </h3>
+                                <p>Bachelor's in Science of Information Technology.</p>
+                                <p>Graduated with 2:1</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- start contact -->
-<div id="contact" class="section">
+<div id="contact" class="section contact overflow-auto">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
@@ -285,10 +345,10 @@
             </div>
             <div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
                 <form role="form" method="post" action="/contactForm">
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
                     <textarea name="message" rows="5" class="form-control" id="message"
-                              placeholder="Your Message"></textarea>
+                              placeholder="Your Message" required></textarea>
                     <input name="send" type="submit" class="form-control" id="send" value="SEND ME">
                 </form>
             </div>
@@ -306,9 +366,9 @@
                 <p>Copyright &copy; 2020 Kush Singh Chibber
                 <hr>
                 <ul class="social-icon">
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.facebook.com/singh.kush100" class="fa fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/kushsinghchb" class="fa fa-twitter"></a></li>
+                    <li><a href="https://github.com/kush-blah?tab=repositories" class="fa fa-github"></a></li>
                 </ul>
             </div>
         </div>
@@ -332,6 +392,5 @@
 <script src="js/jquery.simple-text-rotator.js"></script>
 <!-- custom -->
 <script src="js/custom.js"></script>
-
 </body>
 </html>

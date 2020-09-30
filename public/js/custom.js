@@ -1,19 +1,18 @@
-
 //
-$(document).ready(function() {
-			$('#fullpage').fullpage({
-				'verticalCentered': false,
-				'scrollingSpeed': 600,
-				'autoScrolling': false,
-				'css3': true,
-				'navigation': true,
-				'navigationPosition': 'right',
-			});
-		});
-
+$(document).ready(function () {
+    $('#fullpage').fullpage({
+        'verticalCentered': false,
+        'scrollingSpeed': 600,
+        'autoScrolling': false,
+        'css3': true,
+        'navigation': true,
+        'navigationPosition': 'right',
+        normalScrollElements: '#contact,.contact',
+        'scrollBar': false,
+    });
+});
 // wow
-$(function()
-{
+$(function () {
     new WOW().init();
     $(".rotate").textrotator();
 })
