@@ -1,4 +1,5 @@
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
+const favicon = require('serve-favicon');
 const express = require('express');
 const config = require('./config/config');
 const {v4: uuidv4} = require('uuid');
@@ -9,6 +10,7 @@ const app = express();
 const path = require('path');
 
 app.set('view engine', 'ejs');
+app.use(favicon(path.join(__dirname,'public','images','app_icon.ico')));
 
 const publicDir = path.join(__dirname, '/public');
 app.use(bodyParser.urlencoded({// to support URL-encoded bodies
