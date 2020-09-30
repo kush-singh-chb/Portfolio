@@ -162,8 +162,9 @@ h1, h2, h3, h4, h5 {
 
 /* start home */
 #home {
+    background-image: url('../images/20200627_150649.jpg');
     background-size: cover;
-    background: url('../images/20200627_150649.jpg') no-repeat;
+    background-repeat: no-repeat;
     padding-top: 120px;
     padding-bottom: 140px;
     text-align: center;
