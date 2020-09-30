@@ -762,8 +762,8 @@ footer hr {
 /* end social icon */
 @media only screen and (max-width: 600px) {
     #home {
-        background-size: cover;
         background: url('../images/20200627_150649.jpg') center;
+        background-size: cover;;
         background-position-x: -300px;
         text-align: center;
     }
