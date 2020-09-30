@@ -763,12 +763,21 @@ footer hr {
 /* end social icon */
 @media only screen and (max-width: 600px) {
     #home {
-        background: url('../images/20200627_150649.jpg') center;
-        background-size: cover;;
+        background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/20200627_150649.jpg') center;
+        background-size: cover;
         background-position-x: -300px;
         text-align: center;
     }
-
+    #home h1,h2,h3{
+        color: white;
+    }
+    #home .container p{
+        color: white;
+    }
+    #home .container a{
+        color: white;
+        border: white solid 1px;
+    }
     #home .btn {
         margin-right: 25%;
     }
