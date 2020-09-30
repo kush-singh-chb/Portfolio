@@ -632,6 +632,7 @@ footer hr {
 
 #Professional{
     padding: 10px;
+    min-height: 700px;
 }
 #Professional h2 {
     color: #ffffff;
@@ -750,5 +751,9 @@ footer hr {
         position: absolute;
         top: 12%;
         left: 12%;
+    }
+
+    #Professional{
+        min-height: 900px;
     }
 }
