@@ -27,6 +27,9 @@ body {
 #Professional,
 #Professional .fp-slide,
 #Professional .fp-tableCell,
+#Education,
+#Education .fp-slide,
+#Education .fp-tableCell,
 footer,
 footer .fp-slide,
 footer .fp-tableCell {
@@ -648,7 +651,7 @@ footer hr {
 
 #Education .container .card {
     position: relative;
-    margin: 5px;
+    margin: 5px 10px 5px 5px;
     display: inline-grid;
 }
 #Education .container .card .icon {
