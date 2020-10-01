@@ -324,16 +324,17 @@ h1, h2, h3, h4, h5 {
     transform: scale(0.9);
 }
 
+
 /* end portfolio */
 
 /* start contact */
 
-#Education{
+#Education {
     background: #1a1a1a;
     padding: 15px;
 }
 
-#Education h2{
+#Education h2 {
     color: white;
 }
 
@@ -633,17 +634,18 @@ footer hr {
     border-bottom-color: #2fcea5
 }
 
-#Professional{
+#Professional {
     padding: 10px;
     min-height: 700px;
 }
+
 #Professional h2 {
     color: #ffffff;
 }
 
-#Education .col{
+#Education .col {
     position: relative;
-    top:50%;
+    top: 50%;
     left: 10%;
 }
 
@@ -652,6 +654,7 @@ footer hr {
     margin: 5px 10px 5px 5px;
     display: inline-grid;
 }
+
 #Education .container .card .icon {
     position: absolute;
     top: 0;
@@ -662,12 +665,15 @@ footer hr {
     transition: 0.7s;
     z-index: 1;
 }
+
 #Education .container .card:nth-child(1) .icon {
     background: #ffffff;
 }
+
 #Education .container .card:nth-child(2) .icon {
     background: #ffffff;
 }
+
 #Education .container .card:nth-child(3) .icon {
     background: #415cba;
 }
@@ -681,6 +687,7 @@ footer hr {
     transition: 0.7s;
     color: #fff;
 }
+
 #Education .container .card .face .content .icon img {
     position: absolute;
     top: 50%;
@@ -690,11 +697,13 @@ footer hr {
     transition: 0.7s;
     color: #fff;
 }
+
 #Education .container .card .face {
     width: 300px;
     height: 200px;
     transition: 0.5s;
 }
+
 #Education .container .card .face.face1 {
     position: relative;
     background: #333;
@@ -704,20 +713,25 @@ footer hr {
     z-index: 1;
     transform: translateY(100px);
 }
+
 #Education .container .card:hover .face.face1 {
     background: #ff0057;
     transform: translateY(0px);
 }
+
 #Education .container .card .face.face1 .content {
     opacity: 1;
     transition: 0.5s;
 }
+
 #Education .container .card:hover .face.face1 .content {
     opacity: 1;
 }
+
 #Education .container .card .face.face1 .content i {
     max-width: 100px;
 }
+
 #Education .container .card .face.face2 {
     position: relative;
     background: #fff;
@@ -729,15 +743,18 @@ footer hr {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-100px);
 }
+
 #Education .container .card:hover .face.face2 {
     transform: translateY(0);
 }
+
 #Education .container .card .face.face2 .content p {
     margin: 0;
     padding: 0;
     text-align: center;
     color: #414141;
 }
+
 #Education .container .card .face.face2 .content h3 {
     margin: 0 0 10px 0;
     padding: 0;
@@ -745,39 +762,47 @@ footer hr {
     text-align: center;
     color: #414141;
 }
+
 #Education .container a {
     text-decoration: none;
     color: #414141;
     transition: 0.5s;
 }
-#Education .card:nth-child(1) h3 a:hover{
+
+#Education .card:nth-child(1) h3 a:hover {
     color: #e07768;
 }
-#Education .card:nth-child(2) h3 a:hover{
+
+#Education .card:nth-child(2) h3 a:hover {
     color: #6eadd4;
 }
-#Education .card:nth-child(3) h3 a:hover{
+
+#Education .card:nth-child(3) h3 a:hover {
     color: #4aada9;
 }
 
 /* end social icon */
 @media only screen and (max-width: 600px) {
     #home {
-        background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/20200627_150649.jpg') center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/20200627_150649.jpg') center;
         background-size: cover;
         background-position-x: -300px;
         text-align: center;
     }
-    #home h1,h2,h3{
+
+    #home h1, h2, h3 {
         color: white;
     }
-    #home .container p{
+
+    #home .container p {
         color: white;
     }
-    #home .container a{
+
+    #home .container a {
         color: white;
         border: white solid 1px;
     }
+
     #home .btn {
         margin-right: 25%;
     }
@@ -883,7 +908,7 @@ footer hr {
         left: 12%;
     }
 
-    #Professional{
+    #Professional {
         min-height: 900px;
     }
 
@@ -891,13 +916,31 @@ footer hr {
         min-height: 1200px;
     }
 
-    #Education .col{
+    #Education .col {
         position: relative;
-        top:50%;
+        top: 50%;
         left: 0;
     }
 
     #Education .container .card {
         margin-bottom: -100px;
+    }
+    #portfolio .portfolio-thumb .portfolio-overlay {
+        background: #f1dbde;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 75%;
+        height: 85%;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-top: 30px;
+        transition: all 0.4s ease-in-out;
+    }
+    .augmont h4{
+        margin-top: -15px;
     }
 }
