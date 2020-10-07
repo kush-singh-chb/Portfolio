@@ -210,11 +210,13 @@ h1, h2, h3, h4, h5 {
     background: #1a1a1a;
 }
 
-#work h2, h3 {
+#work h2 {
     text-align: center;
     color: white;
 }
-
+#work h3{
+    color: white;
+}
 
 #work .media {
     margin-top: 30px;

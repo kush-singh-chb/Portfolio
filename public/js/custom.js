@@ -7,7 +7,6 @@ $(document).ready(function () {
         'css3': true,
         'navigation': true,
         'navigationPosition': 'right',
-        normalScrollElements: '#contact,.contact',
         'scrollBar': false,
     });
 });
